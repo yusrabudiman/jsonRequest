@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>punny web</title>
+    <style>
+        section{
+            margin: 5% auto;
+            text-align: center;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <img scr="" id="gambar" width="300px">
-    <p id="author"></p>
-
-
+    <section>
+        <h1 id="punnyweb"></h1>
+        <img scr="" id="gambar" width="300px">
+        <p id="author"></p>
+    </section>
     <script>
         let show = function(data){
             let arr = JSON.parse(data);
@@ -38,6 +46,7 @@
                 console.log(e)
             }
         }
+        punnyweb.innerHTML = punnyweb.innerHTML + "Punny Web";
         load();
     </script>
 </body>
